@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          
+        <title>COLO SHOP</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./solution.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
+  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+       
+        <nav class="navbar navbar-expand-sm bg-light navbar-b my-1 sticky-top" style="height: 85px;">
+            <div class="container-fluid" >
+              <a class="navbar-brand" href="#"><img src="./box-seam.svg" alt="moveit brand icon" height="39">
+              </a>
+              
+                  <a class="navbar-brand fs-3" href="#" style="color: red; font-family: 'Protest Guerrilla', sans-serif;"> SOLO <span style="color: black; ">SHOP</span></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                     </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active fs-5" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active fs-5" href="/login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5"  href="#">Services</a>
+                      </li>
+                      
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                   </div>
+                </div>
+          </nav>
+
+          <script>
+            $(document).ready(function(){
+               url = new URLSearchParams(window.location.search);
+               crod_id = url.get('pid');
+               
+               
+               t ='';
+               $.getJSON("product.json",function(data){
+                 for(i=0;i<data.length;i++){
+
+                  if(data[i].id==crod_id){
+                    t+= '<div class=" mb-3" style="width:1500px;">\
+                      <div class="row g-0">\
+                        <div class="col-md-4">\
+                          <img src="img/'+data[i].pimg+'" class="img-fluid rounded-start" style="height:700px;" alt="...">\
+                        </div>\
+                        <div class="col-md-8 mt-5 g-5 mt-3">\
+                          <div class="card-body ">\
+                            <h1 class="card-title m-3">'+data[i].name+'</h1>\
+                            <p class="card-text m-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.Designed for versatility, the UrbanEdge Graphic Tee transitions effortlessly from day to night, offering a relaxed fit that ensures all-day comfort without compromising on style. Pair it with your favorite denim for a laid-back vibe, or layer it under a jacket for an edgy urban look\
+                                </p>\
+                            <h4 class="card-title  mt-2 m-3">'+data[i].price+'</h4>\
+                            <p class="btn bg-danger">Add to cart</p>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>';
+
+                  }
+                 }
+                 $("#prodlist").append(t);
+               });
+            });
+          </script>
+
+          <div id="prodlist" class="row">
+            <div class="fluid-container ">
+
+
+            </div>
+          </div>
+    
+
+          
+    </body>
+</html>

@@ -1,0 +1,198 @@
+[
+    {
+        
+        "id":0,
+        "name":"Men",
+        "pimg":"banner_3.jpg",
+        "pid":3
+    
+    },
+    {
+        
+        "id":1,
+        "name":"Women",
+        "pimg":"banner_1.jpg",
+        "pid":3
+    
+    },
+    
+    {
+
+        "id":2,
+        "name":"Fashionable brown jacket",
+        "pimg":"product_1.png",
+        "price":"$100",
+        "pid":0
+    
+    },
+    
+    {
+        "id":3,
+        "name":"Fashionable bag",
+        "pimg":"product_2.png",
+        "price":"$150",
+        "pid":0
+    
+    },
+    
+    {
+        "id":4,
+        "name":"Yellow sweatshirt",
+        "pimg":"product_3.png",
+        "price":"$190",
+        "pid":1
+    
+    },
+    
+    {
+        "id":5,
+        "name":"Travel fashionable bag",
+        "pimg":"product_4.png",
+        "price":"$299",
+        "pid":0 
+    
+    },
+    
+    {
+        "id":6,
+        "name":"Fancy goldish shoes",
+        "pimg":"product_5.png",
+        "price":"$311",
+        "pid":0
+    
+    },
+    
+    {
+        "id":7,
+        "name":"Super unbreakable glasses",
+        "pimg":"product_6.png",
+        "price":"$399",
+        "pid":0
+    
+    },
+    
+    {
+        "id":8,
+        "name":"Sweater for women's",
+        "pimg":"product_7.png",
+        "price":"$567",
+        "pid":1
+    
+    },
+    
+    {
+        "id":9,
+        "name":"Zi wallet",
+        "pimg":"product_8.png",
+        "price":"$279",
+        "pid":1
+    
+    },
+    
+    {
+        "id":10,
+        "name":"Regular wear jacket",
+        "pimg":"product_9.png",
+        "price":"$300",
+        "pid":0
+    
+    },
+    
+    {
+        "id":11,
+        "name":"Fashionable grey tshirt",
+        "pimg":"product_10.png",
+        "price":"$190",
+        "pid":1
+    
+    },
+    
+    {
+        "id":12,
+        "name":"Fashionable brown jacket",
+        "pimg":"product_1.png",
+        "price":"$100",
+        "pid":0
+    
+    },
+    {
+        "id":13,
+        "name":"Fashionable yellow jacket",
+        "pimg":"product_11.png",
+        "price":"$400",
+        "pid":1
+    
+    },
+    {
+        "id":14,
+        "name":"Regular wear blue sweatshirt",
+        "pimg":"product_12.png",
+        "price":"$223",
+        "pid":0
+    
+    },
+    {
+        "id":15,
+        "name":"Regular wear colorrfull cool sweatshirt",
+        "pimg":"product_13.png",
+        "price":"$199",
+        "pid":1
+    
+    },
+    {
+        "id":16,
+        "name":"Regular wear white smooth shirt",
+        "pimg":"product_14.png",
+        "price":"$300",
+        "pid":0
+    
+    },
+    {
+        "id":17,
+        "name":"Regular wear tshits whith smart patch",
+        "pimg":"product_15.png",
+        "price":"$199",
+        "pid":0
+    
+    },
+    {
+        "id":18,
+        "name":"Regular wear pink tshirst for womens",
+        "pimg":"product_16.png",
+        "price":"$159",
+        "pid":1
+    
+    },
+    {
+        "id":19,
+        "name":"White Tshirt gents awesome wear",
+        "pimg":"product_17.png",
+        "price":"$239",
+        "pid":1
+    
+    },
+    {
+        "id":20,
+        "name":"Greenn lovely cute tshirt",
+        "pimg":"product_18.png",
+        "price":"$200",
+        "pid":1
+    
+    },
+    {
+        "id":21,
+        "name":"Blue gents tshirt",
+        "pimg":"product_19.png",
+        "price":"$189",
+        "pid":0
+    
+    },
+    {
+        "id":22,
+        "name":"regular wear pink hearted wear ",
+        "pimg":"product_20.png",
+        "price":"$200",
+        "pid":0
+    
+    }
+]
